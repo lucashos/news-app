@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ctw News</string>
+    <string name="news_comments">Comments:</string>
+    <string name="favorites_header">Favorites</string>
+    <string name="news_header">News</string>
+    <string name="news_clear_list">Clear</string>
+</resources>

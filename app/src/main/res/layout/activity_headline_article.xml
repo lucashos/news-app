@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/dimen_medium"
+        android:paddingTop="@dimen/dimen_large"
+        android:paddingBottom="@dimen/dimen_small">
+
+        <TextView
+            android:id="@+id/tv_headline_article_title"
+            style="@style/HeadlineArticleTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="news Title" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_headline_article_image"
+            style="@style/HeadlineArticleImage"
+            app:layout_constraintTop_toBottomOf="@id/tv_headline_article_title" />
+
+        <TextView
+            android:id="@+id/tv_headline_article_author"
+            style="@style/HeadlineArticleAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_tiny"
+            app:layout_constraintTop_toBottomOf="@id/iv_headline_article_image"
+            tools:text="news author" />
+
+        <TextView
+            android:id="@+id/tv_headline_article_description"
+            style="@style/HeadlineArticleDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_medium"
+            app:layout_constraintTop_toBottomOf="@id/tv_headline_article_author"
+            tools:text="News description" />
+
+        <TextView
+            android:id="@+id/tv_headline_article_content"
+            style="@style/HeadlineArticleContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_medium"
+            app:layout_constraintTop_toBottomOf="@id/tv_headline_article_description"
+            tools:text="news body" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- region topheadline-->
+    <style name="TopHeadlineHeader" parent="TextAppearance.MaterialComponents.Headline4" />
+
+    <style name="TopHeadlineAction" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textColor">?attr/colorSecondaryVariant</item>
+    </style>
+
+    <style name="TopHeadlineTitle" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TopHeadlineDescription" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TopHeadlineImage">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+    <!--endregion topheadline-->
+
+    <!-- region headline article -->
+    <style name="HeadlineArticleTitle" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="HeadlineArticleDescription" parent="TopHeadlineDescription" />
+
+    <style name="HeadlineArticleContent" parent="TopHeadlineDescription" />
+
+    <style name="HeadlineArticleComments" parent="TextAppearance.MaterialComponents.Headline6" />
+
+    <style name="HeadlineArticleAuthor" parent="TextAppearance.MaterialComponents.Caption" />
+
+    <style name="HeadlineArticleImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">320dp</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+    <!-- endregion headline article -->
+</resources>

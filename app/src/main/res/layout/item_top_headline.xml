@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/dimen_medium"
+    android:paddingBottom="@dimen/dimen_small"
+    android:paddingTop="@dimen/dimen_medium">
+    
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_top_headline_image"
+        style="@style/TopHeadlineImage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_top_headline_title"
+        style="@style/TopHeadlineTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_small"
+        android:layout_marginEnd="@dimen/dimen_small"
+        android:layout_marginStart="@dimen/dimen_medium"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_top_headline_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="delectus aut autem"/>
+
+    <TextView
+        android:id="@+id/tv_top_headline_description"
+        style="@style/TopHeadlineDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_small"
+        android:layout_marginStart="@dimen/dimen_medium"
+        android:layout_marginTop="@dimen/dimen_small"
+        android:maxLines="2"
+        android:ellipsize="end"
+        app:layout_constraintTop_toBottomOf="@id/tv_top_headline_title"
+        app:layout_constraintStart_toEndOf="@id/iv_top_headline_image"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

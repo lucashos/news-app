@@ -11,14 +11,3 @@ data class TopHeadlineResponse(
     val totalResults: Int,
     val articles: List<HeadlineArticleResponse>
 ) : Parcelable
-
-
-@Parcelize
-data class HeadlineArticleResponse(
-    val author: String,
-    val content: String,
-    val title: String,
-    val description: String,
-    @SerializedName("urlToImage") val imageUrl: String,
-    @SerializedName("publishedAt") val publishingDate: Date
-): Parcelable

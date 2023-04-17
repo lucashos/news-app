@@ -47,7 +47,10 @@ class TopHeadlinesAdapter(
             is TopHeadlinesViewHolder -> {
                 holder.bind(articles[position - 1])
             }
-            else -> { //Do nothing }
+            is TopHeadlinesHeaderViewHolder -> {
+                articles.find { it.source.name.isNotEmpty() }?.let {
+                    holder.bind(it.source.name)
+                }
             }
         }
     }

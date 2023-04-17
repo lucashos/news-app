@@ -13,7 +13,6 @@ class TopHeadlinesViewHolder(
     fun bind(article: HeadlineArticleResponse) {
         binding.run {
             tvTopHeadlineTitle.text = article.title
-            tvTopHeadlineDescription.text = article.description
             ivTopHeadlineImage loadImage article.imageUrl
             root.setOnClickListener { onItemClick(article) }
         }

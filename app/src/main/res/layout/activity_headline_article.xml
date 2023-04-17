@@ -23,6 +23,8 @@
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/iv_headline_article_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             style="@style/HeadlineArticleImage"
             app:layout_constraintTop_toBottomOf="@id/tv_headline_article_title" />
 
@@ -41,6 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dimen_medium"
+            android:layout_marginHorizontal="@dimen/dimen_medium"
             app:layout_constraintTop_toBottomOf="@id/tv_headline_article_author"
             tools:text="News description" />
 

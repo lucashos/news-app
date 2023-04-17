@@ -28,18 +28,4 @@
         app:layout_constraintEnd_toEndOf="parent"
         tools:text="delectus aut autem"/>
 
-    <TextView
-        android:id="@+id/tv_top_headline_description"
-        style="@style/TopHeadlineDescription"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/dimen_small"
-        android:layout_marginStart="@dimen/dimen_medium"
-        android:layout_marginTop="@dimen/dimen_small"
-        android:maxLines="2"
-        android:ellipsize="end"
-        app:layout_constraintTop_toBottomOf="@id/tv_top_headline_title"
-        app:layout_constraintStart_toEndOf="@id/iv_top_headline_image"
-        app:layout_constraintEnd_toEndOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

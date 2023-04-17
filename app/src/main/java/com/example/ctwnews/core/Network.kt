@@ -1,5 +1,6 @@
 package com.example.ctwnews.core
 
+import com.example.ctwnews.BuildConfig
 import com.google.gson.GsonBuilder
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -27,7 +28,7 @@ class Network {
         .addInterceptor(getLoggerInterceptor())
         .addInterceptor { chain ->
             val request = chain.request().newBuilder()
-                .addHeader("X-Api-Key", "4b50b8dfe2884682a731378fc6a5795d")
+                .addHeader("X-Api-Key", BuildConfig.API_KEY)
                 .build()
 
             chain.proceed(request)

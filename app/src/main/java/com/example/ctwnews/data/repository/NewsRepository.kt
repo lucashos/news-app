@@ -1,5 +1,6 @@
 package com.example.ctwnews.data.repository
 
+import com.example.ctwnews.BuildConfig
 import com.example.ctwnews.data.service.NewsService
 import com.example.ctwnews.domain.entities.TopHeadlineResponse
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
@@ -10,7 +11,7 @@ class NewsRepository(
     private val service: NewsService
 ) {
     fun listTopHeadlines(): Observable<TopHeadlineResponse> {
-        return service.listTopHeadlines("bbc-news")
+        return service.listTopHeadlines(BuildConfig.NEWS_SOURCE)
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .map {
